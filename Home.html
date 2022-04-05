@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="A ">
+        <meta name="author" content="AR-DE Company">
+        <meta name="date" content="March 11, 2022">
+        <meta name="keywords" content="Burger, Order Online">
+        <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ylaiza's Burger House</title>
+
+    <style>           
+            html
+            {
+                padding: 0px;
+                margin: 0px;
+            }
+            header
+            {
+                padding: 0;
+                background-image: linear-gradient(to right, #02f2a6, #23453a);
+                color: white;
+                overflow:auto;
+            }
+            body
+            {
+                width:100%;
+                min-height: 100vh;
+                justify-content: space-between;
+                display: flex;
+                flex-direction: column;
+                padding: 0px;
+                font-family: TW Cen MT, serif;
+                background-color: #F6FDD8;
+                overflow: auto;
+            }
+
+            a:visited, a:focus
+            {
+                text-decoration: none;
+                color: white;
+            }
+            a:hover
+            {
+                color: #1b2226;
+            }
+
+            /*PROFILE*/
+
+            .P{
+                display: inline-block;
+                position: static;                           
+            }
+
+            .P button
+            {
+                border: none;
+                margin: 3px;
+                display: inline-block;
+                font-weight: bold;
+                padding: 4px 30px;
+                font-size: 18px;
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+                outline:none;
+                color: #181411;
+                box-shadow: 0px 2px 0px 0 rgba(0,0,0,0.24), 0px 0px 10px 0 rgba(0,0,0,0.19);
+                border: 0px solid black;
+                border-radius: 5px;
+                vertical-align: middle;
+                transition: .3s;
+                background-color: transparent;
+               
+            }
+
+            .P button:hover
+            {
+                background-color:#CFF527;              
+            }
+
+            .P button:active
+            {
+                background-color: #CFF527;
+                box-shadow: 0 2px #666;
+                transform: translateY(4px);
+            }
+
+
+
+            /*BURGERS MENU*/
+            .BM {
+                display: inline-block;
+                position: static;                           
+            }
+
+            .BM button
+            {
+                border: none;
+                margin: 3px;
+                display: inline-block;
+                font-weight: bold;
+                padding: 4px 30px;
+                font-size: 18px;
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+                outline:none;
+                color: #1C191A;
+                box-shadow: 0px 2px 0px 0 rgba(0,0,0,0.24), 0px 0px 10px 0 rgba(0,0,0,0.19);
+                border: 0px solid #1C191A;
+                border-radius: 5px;
+                vertical-align: middle;
+                transition: .3s;
+                background-color: transparent;
+               
+            }
+
+            .BM button:hover
+            {
+                background-color:#CFF527;              
+            }
+
+            .BM button:active
+            {
+                background-color: #CFF527;
+                box-shadow: 0 2px #666;
+                transform: translateY(4px);
+            }
+
+
+
+            /*ABOUT US*/
+            
+            .AU{
+                display: inline-block;
+                position: static;                           
+            }
+            
+            .AU button
+            {
+                
+                border: none;
+                margin: 3px;
+                display: inline-block;
+                font-weight: bold;
+                padding: 4px 30px;
+                font-size: 18px;
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+                outline:none;
+                color: #181411;
+                box-shadow: 0px 2px 0px 0 rgba(0,0,0,0.24), 0px 0px 10px 0 rgba(0,0,0,0.19);
+                border: 0px solid black;
+                border-radius: 5px;
+                vertical-align: middle;
+                transition: .3s;
+                background-color: transparent;
+               
+            }
+
+            .AU button:hover
+            {
+                background-color:#CFF527;              
+            }
+
+            .AU button:active
+            {
+                background-color: #CFF527;
+                box-shadow: 0 2px #666;
+                transform: translateY(4px);
+            }
+
+            /*LOGIN/REGISTER*/
+            .LR{
+                display: inline-block;
+                position: static; 
+                float: right;
+                        
+            }
+            
+            .LR button
+            {
+                border: none;
+                margin: 3px;
+                display: inline-block;
+                font-weight: bold;
+                padding: 4px 40px;
+                font-size: 18px;
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+                outline:none;
+                color: #F6FDD8;
+                box-shadow: 0px 2px 0px 0 rgba(0,0,0,0.24), 0px 0px 10px 0 rgba(0,0,0,0.19);
+                border: 0px solid black;
+                border-radius: 5px;
+                vertical-align: middle;
+                transition: .3s;
+                background-color: transparent;
+               
+            }
+
+
+            .LR button:active
+            {
+                background-color: #23453a;
+                box-shadow: 0 2px #666;
+                transform: translateY(4px);
+            }
+
+            .topnav
+            {
+                background-image: linear-gradient(to right, #02F2A6, #02F2A6);
+                overflow: auto;
+                background-color: #02F2A6;          
+            }
+            ._topnav
+            {
+                background-image: linear-gradient(to right, #02F2A6, #23453a);
+                padding: 5px;             
+                margin-left: 10%;
+                font-family: TW Cen MT,serif;
+                font-size: 21px;
+                color: #181411;
+                line-height: 18px;
+                text-align: left;
+                background-color: #23453a;                   
+            }
+
+            .input
+            {
+                text-align: end;
+            }
+           
+         
+
+            * 
+            {
+            margin: 0;
+            padding: 0;
+            }
+
+            .imgbox 
+            {
+                display: grid;
+                height: 100%;
+            }
+
+            .icon
+            {
+                height: 100%;
+                float: right;
+                margin-right: 20px;
+            }
+            .center-fit 
+            {
+                max-width: 100%;
+                max-height: 100vh;
+                margin: auto;
+            }
+            footer
+            {
+                font: 100vw;
+                color: white;
+                background-color: #23453A;
+                display: fixed;
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div style="height: 90px; margin: 0;">
+                <img id ="burger" src="https://www.4shared.com/img/z-0hzU4Uiq/s25/17f79325c90/Burger" style=" margin-top:5px;margin-left: 40px; pointer-events:none;" alt="BURGER width="150" height="130"">
+            </div>
+            <p class="loginsignup">
+                <!-- <label class="search";>SEARCH: <input type="search"></label> -->
+                <!--<a href="" style="text-decoration: none;">LOGIN</a> | <a href="" style="text-decoration: none;">SIGNUP</a>-->
+            </p>
+            <div class="topnav">
+                <div class="_topnav">
+                    
+                        <div class="P">
+                        <button>PROFILE</button>
+                        </div>
+
+                        <div class="BM">
+                        <button>BURGERS MENU</button>
+                        </div>    
+                
+                        <div class="AU">
+                        <button>ABOUT US</button>
+                        </div>
+
+                        <div class="LR" >
+                            <button>REGISTER</button>
+                        </div>
+
+                        <div class="LR" >
+                            <button>LOGIN</button>
+                        </div>
+
+                        <div class="icon">
+                            <img class="center-fit" img src="https://www.4shared.com/img/YN8q_TCNea/s25/17ff7be5f78/cart-5-256" alt = "HOME width="30" height="30" ">
+                        </div>
+            
+                                     
+                </div> 
+            </div>
+        </header>
+        <div class="imgbox">
+            <img class="center-fit" img src="https://www.4shared.com/img/dT8vrt88ea/s25/17f79190830/HOME" alt = "HOME width="800" height="650" ">
+        </div>
+        <footer>
+            <p style="margin: 0px; padding: 7px;">
+                A platform for ordering system, by engineering students. <br>
+                All Rights Reserved. 2020
+            </p>
+        </footer>
+    </body>
+</html>
+</div>
